@@ -1,0 +1,35 @@
+<script>
+    /*
+     Type coercion
+        a. number to string 
+        b. string to number 
+        c. boolean to number 
+        d. equality
+    */
+   
+    // number to string
+    var res1 = 100 + "100"
+   document.write("<br>res1 : "+res1+" and its type is : "+typeof res1);
+
+    // string to number
+    var res2 = 75 - "100"
+   document.write("<br>res2 : "+res2+" and its type is : "+typeof res2);
+
+    // boolean to number
+    var res3 = true + 34 - false - true;  
+   document.write("<br>res3 : "+res3+" and its type is : "+typeof res3);
+   
+   // equality 
+   var res4 = null == false;
+   document.write("<br>res4 : "+res4);
+
+   var res5 = null == undefined;
+   document.write("<br>res5 : "+res5);
+
+   var res6 = null == 0;
+   document.write("<br>res6 : "+res6);
+
+   var res7 = null >= 0;
+   document.write("<br>res7 : "+res7);
+
+</script>

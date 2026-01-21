@@ -1,0 +1,26 @@
+<script>
+    var num1 = parseInt(prompt("Enter first number"));
+    var num2 = parseInt(prompt("Enter second number"));
+
+    alert("Select Choice : \n1 for Add\n2 for Sub\n3 for Mul\n4 for Div\n5 for Mod\n\nClick Enter to Feed Choice..");
+    var choice = parseInt(prompt("Enter choice"));
+    
+    if(isNaN(choice)){
+        alert("Please Enter Valid Choice");
+    }else{
+        switch(choice){
+            case 1 : document.write("Sum : "+(num1+num2));
+                    break;
+            case 2 : document.write("Sub : "+(num1-num2));
+                    break;
+            case 3 : document.write("Mul : "+(num1*num2));
+                    break;
+            case 4 : document.write("Div : "+(num1/num2));
+                    break;
+            case 5 : document.write("Mod : "+(num1%num2));
+                    break;
+            default : document.write("Invalid selection");
+                    break;
+        }
+    }
+</script>

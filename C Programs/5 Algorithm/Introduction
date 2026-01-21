@@ -1,0 +1,38 @@
+Algorithm : 
+Algorithm is a sequential, finite, non complex, step by step solution, written in an english like statement to solve any particular problem.
+
+Algorithm to add two numbers : 
+step 1 : start
+step 2 : Input a and b 
+step 3 : Calculate c = a + b
+step 4 : Output c 
+step 5 : stop
+
+Algorithm to find out simple interest : 
+step 1 : start
+step 2 : Input p,r and t 
+step 3 : Calculate si = (p*r*t)/100
+step 4 : Output si 
+step 5 : stop
+
+Algorithm to find out compound interest : 
+step 1 : start
+step 2 : Input p, r and t 
+step 3 : Calculate amt = p * pow(1+r/100,t)
+step 4 : Calculate ci = amt - p 
+step 5 : Output amt, ci
+step 6 : stop
+
+Algorithm to swap two numbers : 
+step 1 : start
+step 2 : Input a and b 
+step 3 : Perform swapping
+            temp = a 
+            a = b 
+            b = temp
+step 4 : Swapped values of a and b
+step 5 : stop
+
+Flowchart : 
+-----------
+Pictorial representation or Graphical representation or Diagrametic representation of algorithm to depict clearly the flow of control of program.

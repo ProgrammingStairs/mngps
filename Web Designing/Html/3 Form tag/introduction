@@ -1,0 +1,26 @@
+form tag
+---------
+<form action="" method="get | post"></form> 
+<input type="text" id="" name="">
+       type="email"    (html5)
+       type="password" (html5)
+       type="date"     (html5)
+       type="time"     (html5) 
+       type="month"    (html5)
+       type="week"     (html5)
+       type="reset"
+       type="submit"
+       type="file"
+       type="number"   (html5)
+       type="radio"
+       type="checkbox"
+       type="url"      (html5)
+       type="color"    (html5) 
+
+<label for="id_name">
+<select id="" name="">
+<option value=""></option>    
+<textarea rows="" cols="">
+<fieldset>
+<legend>
+<button type="submit | reset">

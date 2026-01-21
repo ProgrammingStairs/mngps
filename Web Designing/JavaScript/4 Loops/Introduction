@@ -1,0 +1,26 @@
+Looping Control statement
+-------------------------
+Looping is the process of performing same task or some task in an iterative manner untill certain condition is satisfied. 
+
+Types of loops : 
+    a. Entry control loop
+        Where condition is checked at the time of entry
+        For ex : for loop  and while loop
+
+        for loop : When we already know in advance that how many times we have to execute our loop. For ex : Printing a table of a number
+
+        while loop : When we don't know in advance that how many times we have to execute out loop. For ex : Reversing a number
+
+    b. Exit control loop 
+        Where condition is checked at the time of exit
+        For ex : do while loop 
+
+        do while loop : Whether condition is true or false, do while loop may executes atleast once.
+
+New loops introduced in javascript : 
+    a. forEach loop<------- helpfull in iterating elements
+    b. for in loop <------- deals with indexing
+    c. for of loop <------- deals with value
+
+    
+

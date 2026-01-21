@@ -1,0 +1,2 @@
+ document.write("<br>document is the object of : "+document.constructor.name);
+ document.write("<br>window is the object of : "+window.constructor.name);

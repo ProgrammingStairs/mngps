@@ -1,0 +1,16 @@
+<script>
+    // factors of all the numbers between two entered numbers 
+
+    var n = prompt("Enter initial number");
+    var m = prompt("Enter final number");
+    
+    for(var j = n ; j <= m ; j++ ){
+        document.write("Factors of "+j+" : ");
+        for(var i=1 ; i<=j ; i++){
+            if(j % i == 0)
+                document.write(i+"&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+    }
+
+</script>

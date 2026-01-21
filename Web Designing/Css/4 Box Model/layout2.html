@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #box1{
+            height: 300px;
+            background-color: dodgerblue;
+        }
+        #banner{
+            height: 300px;
+            width: 100%;
+        }
+        #box2{
+            height: 150px;
+            width: 150px;
+            margin-left:75px;
+            margin-top: -75px;
+            border-radius: 50%;
+            background-color: grey;
+        }
+        #user{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        #box3{
+            height: 50px;
+            width: 900px;
+            /* background-color: grey; */
+            margin: auto;
+            padding: 75px;
+        }
+        input{
+            height: 50px;
+            width: 650px;
+            font-size: 20px;
+            font-family: candara;
+            box-shadow: 1px 1px 10px 1px black;
+            border-width: 0px;
+            border-radius: 10px 0px 0px 10px;
+            outline: 0px;
+            text-align: center;
+        }
+        button{
+            border-radius: 0px 10px 10px 0px;
+            box-shadow: 1px 1px 10px 1px black;
+            height: 53px;
+            width: 225px;
+            font-size: 20px;
+            font-family: candara;
+            background-color: #234567;
+            color:white;
+            margin-left: -4px;
+            border-width: 0px;
+        }
+        button:hover{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <img src="bannerImg.webp" id="banner" alt="">
+    </div>
+    <div id="box2">
+        <img src="user.jpg" id="user" alt="">
+    </div>
+    <div id="box3">
+        <input type="text" name="search" id="search" placeholder="Enter Search Item">
+        <button>Search</button>
+    </div>
+</body>
+</html>

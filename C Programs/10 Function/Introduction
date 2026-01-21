@@ -1,0 +1,62 @@
+Function
+--------
+Function is a self contained block of statement.
+Every function performs some specific task.
+
+Functions can be classified as (Types of function) : 
+    a. BuiltIn function | InBuilt Function | Standard Function | Library Function | Predefined function 
+
+    Functions whose definition part is already defined.
+    ex : printf(), scanf(), getch() etc 
+
+    b. User defined function 
+
+    Functions whose definition part is defined by the programmers or developers according to programming needs.
+
+    ex: void display(){}, void show(){} etc
+
+Advantages of function : 
+
+    a. Function reduces program size.
+    b. Function reduces redundancy of code.  
+    c. Function makes debugging easier.
+    d. Function reduces complexity of code.
+    e. We can create n number of functions.
+    f. Function can be called n number of times. 
+
+Categories of function : 
+
+    a. No argument no return type
+    b. No argument with return type 
+    c. With argument and no return type 
+    d. With argument and with return type
+
+Layout of using function :
+
+#include<stdio.h>
+
+    // function declaration 
+
+int main(){
+
+   // function calling  
+    
+   return 0; 
+}
+
+// function definition 
+
+or 
+
+#include<stdio.h>
+
+   // function definition 
+
+int main(){
+
+   // function calling  
+    
+   return 0; 
+}
+
+

@@ -1,0 +1,21 @@
+Looping control statement
+-------------------------
+Looping is the process of performing same task or some task in an iterative or repetative manner untill certain condition is satisfied.
+
+Types of Loops : 
+    a. Entry Control Loop
+    b. Exit control loop 
+
+a. Entry Control Loop
+   In case of entry control loop, condition is checked at the time of entry.Here we use for loop and while loop.
+
+b. Exit Control loop 
+   In case of exit control loop, condition is checked at the time of exit.Here we use do while loop.
+
+   Difference between for loop, while loop and do while loop : 
+
+   for loop : When we already know in advance that how many times we have to executes our loop. Ex: table of a number 
+
+   while loop : When we don't know in advance that how many times we have to executes our loop. Ex : reversing a number
+
+   do while loop : Whether condition is true or false, do while loop may executes atleast once. 

@@ -1,0 +1,23 @@
+Pointer
+--------
+
+1. Pointer is a derived datatype 
+2. Pointer is a variable which can hold the address of another same type of variable
+   int a = 100;
+   int b = a; 
+   value of b = 100
+
+   int *b;
+   b = &a;
+   *b = *(&a) = value at (address of a)
+
+3. For making any variable as a pointer variable, we need to put asterisk sign followed by variable name.
+4. Size of pointer variable is dependent upon compiler and system architecture
+5. Its not mandatory to initialize pointer variable when declared.
+   int *ptr;
+6. We can also initialize pointer variable by null.
+   int *ptr=NULL;
+7. Pointer variable can be categorized as void pointer, null pointer, wild pointer etc
+8. There are two operator which we use in pointer : 
+    a. & ampersand operator (address of operator)
+    b. * asterisk operator (value at operator)

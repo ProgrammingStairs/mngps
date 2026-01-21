@@ -1,0 +1,50 @@
+Control statement : 
+-------------------
+The statement or instructions are used to inform the computer to perform the task when a program is being executed.
+
+There are 4 types of control statement : 
+a. Sequential control statement 
+b. Conditional control statement 
+   (Decision control statement)
+c. Switch control statement 
+d. Looping control statement 
+
+a. Sequential control statement 
+   Input ------------Process-------------Output 
+              (Formula Implementation)
+    Ex : p,r,t     si=(p*r*t)/100       o/p : si  
+
+b. Conditional control statement 
+   (Decision Control statement) 
+
+   i. if statement 
+   ii. if else statement 
+   iii. nested if else statement 
+   iv. else if ladder 
+   
+c. Switch control statement 
+   -- Switch control statement is mainly used for menu based programming
+   -- It works on the concept of cases 
+      case 1 :        case 'a' :          case '+' :      case 'a' : 
+      case 2 :        case 'b' :          case '-' :      case '+' :
+      case 3 :        case 'c' :          case '*' :      case 97  : 
+   -- Duplicate cases not allowed 
+      case 1 :      x
+      case 1 :      x 
+
+      case 97 :              x
+      case 'a' : (case 97)   x
+   -- Switch consists of variable, constant and expression
+      switch(constant | variable | expression){
+         ...
+      }
+   -- syntax : 
+         switch(constant | variable | expression){
+            case 1 : .....
+                     break;
+            case 2 : .....
+                     break;
+            .....
+            default : .....
+                     break;     
+         }

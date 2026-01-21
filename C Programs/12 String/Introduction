@@ -1,0 +1,21 @@
+String
+------
+1. String is the special name for character array
+2. String is the sequence of characters
+3. String is derived datatype
+4. String also deals with the concept of indexing, because it also follows number system 
+5. Prerequisite for string allocation is base address
+6. String also works on continuous memory allocation
+7. String elements have same name but differentiable by there indexing
+8. String are of two types  : 
+    a. fixed length
+    b. variable length string 
+        i. length controlled string 
+        ii. delimited String
+9. End of string is represented by Null Character (delimiter) '\0'
+10. Here we use %s format specifier
+
+    0     1     2     3     4     5
+    H     E     L     L     O     \0
+  ch[0] ch[1] ch[2] ch[3] ch[4] ch[5]
+  1000  1001  1002  1003  1004  1005   

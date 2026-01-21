@@ -1,0 +1,87 @@
+<script>
+    var arr = [12,23,34,5,6,9];
+    document.write("Array elements are : "+arr+"<br>");
+
+    // forEach
+
+    //document.write("<br>Array elements are : <br>");
+    // arr.forEach((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.forEach((element)=>{
+    //     return element;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // map
+
+    // document.write("<br>Array elements are : ");
+    // arr.map((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.map((element)=>{
+    //     return element;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // find
+    // document.write("<br>Array elements are : ");
+    // arr.find((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.find((element)=>{
+    //     return element>30;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // filter 
+
+    // document.write("<br>Array elements are : ");
+    // arr.filter((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.filter((element)=>{
+    //     return element>30;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // every 
+
+    // document.write("<br>Array elements are : ");
+    // arr.every((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.every((element,index)=>{
+    //     document.write("<br>index : "+index);
+    //     return element>7;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // some 
+
+    // document.write("<br>Array elements are : ");
+    // arr.some((element)=>{
+    //     document.write(element+"&nbsp;&nbsp;&nbsp;&nbsp;");
+    // });
+
+    // var ar = arr.some((element,index)=>{
+    //     document.write("<br>index : "+index);
+    //     return element>7;
+    // });
+    // document.write("<br>Array elements are : "+ar);
+
+    // reduce
+
+    document.write("<br>Array elements are : ");
+    var ar = arr.reduce((a,b)=>{
+        document.write("<br>a : "+a+" b : "+b);
+        return a+b;
+    });
+    document.write("<br>Result : "+ar);
+
+</script>

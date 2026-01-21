@@ -1,0 +1,155 @@
+--> Web : 
+Web is an information space, which comprises of documents and web resources and are interlinked by hyper links and have some specific url, which are access via internet.
+
+--> Web Page :
+1. Web page is a document which is written in a plain text.
+2. Web page contains multi media content 
+   |-- images |-- audio |-- video |-- animation |-- transition etc
+3. Every web page have some specific URL(Uniform Resource Locator)
+4. Must be deployed on atleast one server.
+
+--> Website : 
+    It is a collection of web pages.
+    There are two types of website : 
+        a. Static Website
+            |-- One way communication takes place.
+            |-- Content may not change soo frequently.
+        b. Dynamic Website
+            |-- Two way communication takes place.
+            |-- Content may change accordingly.
+
+Note : Dynamic Website is also known as Web application
+
+--> Web Application : 
+    Application which works on the browser and whose execution takes place on the server.It basically works on client server architecture.
+      |-----------request-------->|  
+    Client <------Http------> Server
+      |<----------response--------|
+
+    Here http is hyper text transfer protocol
+         It is a stateless protocol
+         ---x---------->
+         ---x---------->
+         -------------->
+
+--> Server :
+    Server is a highly configured machine, which stores data, performs processing on that data and helps in retrieval of data.
+    There are two types of server : 
+        a. Web server ----> web application
+        b. Application server ----> Enterprise application
+
+--------------------------------------------------------
+
+                    Web Application
+        __________________|___________________
+        |                                     |
+     Frontend                              Backend
+        |                                     |
+    Web Designing                      Web development
+        |
+    Web Technologies
+        |
+        |-- HTML5
+        |-- CSS3 
+        |-- MEDIA QUERY
+        |-- BOOTSTRAP5
+        |-- JAVASCRIPT
+
+1. HTML : 
+   1. Full form of HTML is Hyper text markup language
+   Here language acts as a medium of communication
+   Here Hypertext means A text which contains link to another text 
+   Here Markup Language means Tag(<>) based language
+   Here Markup language works on three terminology : 
+    a. Definition
+    b. Processing 
+    c. Presentation
+    2. Html document contains multimedia content (animation,images,audio,video, transition,transformation etc)
+    3. We need to save html document by .html extension.
+    4. Output of Html document is going to be displayed out on browser screen.
+    5. Html works on Tags(<>).
+    6. Currently HTML5 is going in the market.
+    7. Html is maily used to create structure of your web page(or web application).
+    8. Html was developed by TIM BERNERS LEE, who was CERN Researcher and he used html for sharing documents with his co-workers, but later on in 1991, he decided to brought html in web designing with few tags.
+    9. Html works on three terminology : 
+        a. Tag 
+        b. Attribute 
+        c. Element
+
+    a) Tag : Tags are hidden keywords, which are mainly used to display content on output screen.
+        Types of Tags :
+            i. Empty tag (unbalanced tag)
+               Which only have opening and no closing 
+               ex: <hr>,<br>,<input>,<img> etc 
+
+            ii. Container tag (balanced tag)
+               Which have opening and closing both
+               ex: <html>...</html>,<body>...</body> etc
+
+            iii. Semantic tag
+                Tags which shows there meaning by there name
+                ex: <header>..</header>, <footer>..</footer> etc 
+
+            iv. Non-Semantic Tag or Structural tag
+                Tags which shows generalized meaning
+                ex: <form>...</form>,<table>..</table> etc    
+
+            v. Self closing Tag (React)
+                ex: <br/> <hr/> <input/> etc  
+    
+    b) Attribute : Attribute provides some additional information
+        <p>This is an example of paragraph</p> 
+        output : This is an example of paragraph
+
+        <p align="center">This is an example of paragraph</p> 
+        output :             This is an example of paragraph
+
+        <img src="" height="" width="" alt="">
+        <input type="text" placeholder="">
+
+        here align, src, height, width, alt, type, placeholder all thses are attributes which shows some additional information 
+
+    c) Element : HTML is an element, which represents whole document and it comprises of opening of <html> tag and closing of </html> tag. Similarly, BODY is also an element, which represents documents body and it comprises of opening of <body> tag and closing of </body> tag.
+
+    -----------------
+    Structure of HTML
+    ----------------- 
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>....</title>
+        </head>
+        <body>
+            ......
+            ......
+        </body>
+    </html>
+
+
+here     <!DOCTYPE html>
+         <! = MDO (Markup Declaration Open)
+         DOCTYPE = Documentation Type 
+         Here Doctype simply represents that which type of documentation browser needs to expect  from this specific document. 
+         here html is type of document
+
+         <html> = it represents whole document
+            <head> = it represents head section 
+                <meta charset="UTF-8">
+                here meta means data about data
+                charset means character set, which means here it consider each character by Unicode Transformation Format - 8 bit (1 byte)
+
+                <meta name="viewport" content=".......">
+
+                <title> title represents tab heading 
+            </head>
+            <body> = it represents documents body
+                .....
+                .....
+            </body>
+        </html>
+
+        save : filename.html
+        output : Browser screen

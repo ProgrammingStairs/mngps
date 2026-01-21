@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal css -->
+    <style>
+        /* element or tag selector */
+        span{
+            color:red;
+        }
+
+        /* descendent selector */
+        p span{
+            color:green;
+        }
+
+        div p span{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <span>Lorem ipsum dolor sit amet.</span>
+        </p>
+    </div>
+    <p>
+        <span>Lorem ipsum dolor sit amet.</span>
+    </p>
+    <span>Lorem ipsum dolor sit amet.</span>
+</body>
+</html>

@@ -1,0 +1,31 @@
+Formatting Tag
+---------------
+1. <b></b> = bold 
+2. <u></u> = underline 
+3. <i></i> = italic 
+4. <strong></strong> = bold (HTML5)
+5. <em></em>(emphasize) = italic (HTML5) 
+6. <sup></sup> = superscript
+7. <sub></sub> = subscript
+8. <mark></mark> = highlighting text 
+9. <abbr title=""></abbr> = abbreviation 
+10. <font face="" color=""></font> = font formatting 
+11. <blockquote></blockquote> = indentation (HTML5)
+12. <pre></pre> = preformatted tag 
+13. <code></code> = code formatting (HTML5)
+14. <address></address> = address formatting (HTML5) 
+15. <center></center> = center 
+16. <h1></h1> to <h6></h6> = Heading Tag
+px = pixel (picture element) 
+  <h1></h1> = 32px
+  <h2></h2> = 24px
+  <h3></h3> = 19px
+  <h4></h4> = 16px (normal font size)
+  <h5></h5> = 13px
+  <h6></h6> = 11px
+
+17. <big></big> = font size > normal font size
+18. <small></small> = font size < normal font size
+19. <q></q> = double quotes
+20. <del></del> = line-through (HTML5)
+21. <strike></strike> = line-through (deprecated)

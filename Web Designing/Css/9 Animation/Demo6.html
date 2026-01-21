@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:60px;
+            width:200px;
+            background-color: red;
+            box-shadow: 1px 1px 5px 1px black;
+            margin: 5px;
+        }
+        #box1{
+            animation-delay: 2s;
+            animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes myAnimation {
+            from{width: 200px;}
+            to{width: 800px;}
+        }
+        #box2{
+            animation-delay: 2s;
+            animation-name: myAnimation1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes myAnimation1 {
+            from{width: 200px;}
+            to{width: 800px;}
+        }
+        #box3{
+            animation-delay: 2s;
+            animation-name: myAnimation2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes myAnimation2 {
+            from{width: 200px;}
+            to{width: 800px;}
+        }
+        #box4{
+            animation-delay: 2s;
+            animation-name: myAnimation3;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        @keyframes myAnimation3 {
+            from{width: 200px;}
+            to{width: 800px;}
+        }
+
+</style>
+</head>
+<body>
+    <div id="box1">ease</div>
+    <div id="box2">ease-in</div>
+    <div id="box3">ease-in-out</div>
+    <div id="box4">ease-out</div>
+</body>
+</html>

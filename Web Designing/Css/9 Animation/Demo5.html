@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height:100px;
+            width:100px;
+            background-color: red;
+            box-shadow: 1px 1px 5px 1px black;
+            border-radius: 50%;
+            animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            position: absolute;
+        }
+        @keyframes myAnimation {
+            0%{
+                top:0;
+                left:0;
+                background-color: orange;
+            }
+            50%{
+                top:400px;
+                left:400px;
+                background-color: blue;
+            }
+            75%{
+                top:400px;
+                left:0;
+                background-color: olive;
+            }
+            100%{
+                top:0;
+                left:0;
+                background-color: purple;
+            }
+        }
+
+        #box1{
+            height:100px;
+            width:100px;
+            background-color: red;
+            box-shadow: 1px 1px 5px 1px black;
+            border-radius: 50%;
+            animation-name: myAnimation1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            position: absolute;
+        }
+        @keyframes myAnimation1 {
+            0%{
+                top:0;
+                left:400px;
+                background-color: orange;
+            }
+            50%{
+                top:400px;
+                left:0;
+                background-color: blue;
+            }
+            75%{
+                top:400px;
+                left:400px;
+                background-color: olive;
+            }
+            100%{
+                top:0;
+                left:400px;
+                background-color: purple;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="box1"></div>
+</body>
+</html>
