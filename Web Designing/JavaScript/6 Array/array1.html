@@ -1,0 +1,37 @@
+<script>
+    /*
+    Array : 
+        a. Array is a collection of homogenous(same type of data) as well as heterogenous(different type of data) data element.
+        b. Array works on the concept of indexing
+        c. Array indexing always starts from zero because it follows number system 
+        d. Prerequisite for array allocation is base address. 
+        e. Array works on continuous memory allocation.
+        f. Array holds primitive as well as object references.
+        g. Array elements shares same name but differentiable by there indexing
+        h. Types of array : 
+            -- one dimensional array (1d array)
+            -- two dimensional array (2d array)
+                |-- It have special type of array i.e Jagged Array
+            -- multidimensional array
+    */
+
+//    var arr = [1,2,3,4,5];
+//    document.write("Array elements are : "+arr);
+
+    var arr = [231,287,34,421,50];
+    document.write("Array elements are : "+arr);
+    
+    var min = arr[0];
+    var max = arr[0];
+
+    for(var i=0;i<arr.length ;i++){
+        if(min>arr[i])
+            min = arr[i];
+        if(max<arr[i])
+            max = arr[i];
+    }
+
+    document.write("<br>Minimum element : "+min);
+    document.write("<br>Maximum element : "+max);
+    
+</script>

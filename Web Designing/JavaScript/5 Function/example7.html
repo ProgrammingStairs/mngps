@@ -1,0 +1,21 @@
+<script>
+    // variable function | anonymous function
+    
+    // var addition = function(a,b){
+    //     document.write("<br>a : "+a);
+    //     document.write("<br>b : "+b);
+    //     return a+b;
+    // }
+
+    // arrow function | lambda expression
+    
+    var addition = (a,b)=>{
+        document.write("<br>a : "+a);
+        document.write("<br>b : "+b);
+        return a+b;
+    }
+
+    var a = parseInt(prompt("Enter first number"));
+    var b = parseInt(prompt("Enter second number"));
+    document.write("<br>Sum : "+addition(a,b));
+</script>
