@@ -1,0 +1,49 @@
+<!-- example showing the concept of multidimensional array -->
+<script>
+    var n = parseInt(prompt("Enter no. of 2d matrix"));
+    var i = parseInt(prompt("Enter rows"));
+    var j = parseInt(prompt("Enter columns"));
+
+    var arr = []; 
+    for(var x=0;x<n;x++){
+        arr[x] = [];
+        for(var y=0;y<i;y++){
+            arr[x][y] = [];
+            for(var z=0;z<j;z++){
+                arr[x][y][z] = parseInt(prompt("Enter Element"));
+            }
+        }
+    }
+
+    document.write("<br>Array elements are : <br>");
+    for(var x=0;x<n;x++){
+        for(var y=0;y<i;y++){
+            for(var z=0;z<j;z++)
+                document.write("&nbsp;&nbsp;&nbsp;"+arr[x][y][z]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+    }
+
+</script>
+
+    <!-- 
+        Two dimensional array : 
+            It is the collection of 1d array
+            It works on grid system
+            Grid system means rows and columns 
+
+            1   7   7     <----- 1d array
+            9   8   7     <----- 1d array 
+            6   5   4     <----- 1d array
+
+            It frames 2d array
+
+                       col1   col2   col3
+                        0       1      2 
+            
+            row1   0    00     01     02    
+            row2   1    10     11     12
+            row3   2    20     21     22 
+
+    -->

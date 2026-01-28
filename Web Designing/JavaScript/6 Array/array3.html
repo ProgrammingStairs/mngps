@@ -1,0 +1,14 @@
+<!-- example to reverse an array -->
+<script>
+    var arr = [50,421,34,287,231];
+    document.write("Array elements are : "+arr);
+  
+    for(var i=0;i<arr.length/2 ;i++){
+        var temp = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
+    }
+
+    document.write("<br>Array elements after reversing : "+arr);
+    
+</script>

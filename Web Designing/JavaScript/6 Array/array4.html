@@ -1,0 +1,43 @@
+<!-- example showing the concept of 2d array -->
+<script>
+    var arr = [];
+    var rows = parseInt(prompt("Enter rows"));
+    var cols = parseInt(prompt("Enter columns"));
+    
+    for(var i=0;i<rows;i++){
+        arr[i] = [];
+        for(var j=0;j<cols;j++){
+            arr[i][j] = parseInt(prompt("Enter Element"));
+        }
+    }
+
+    document.write("<br>Array elements are : <br>");
+    for(var i=0;i<rows;i++){
+        for(var j=0;j<cols;j++){
+            document.write("&nbsp;&nbsp;&nbsp;"+arr[i][j]);
+        }
+        document.write("<br>");
+    }
+
+</script>
+
+    <!-- 
+        Two dimensional array : 
+            It is the collection of 1d array
+            It works on grid system
+            Grid system means rows and columns 
+
+            1   7   7     <----- 1d array
+            9   8   7     <----- 1d array 
+            6   5   4     <----- 1d array
+
+            It frames 2d array
+
+                       col1   col2   col3
+                        0       1      2 
+            
+            row1   0    00     01     02    
+            row2   1    10     11     12
+            row3   2    20     21     22 
+
+    -->
