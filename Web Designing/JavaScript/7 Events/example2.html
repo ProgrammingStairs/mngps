@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var date = Date();
+        // document.write("typeof Date() : "+typeof Date());
+
+        // var dateNew = new Date();
+        // document.write("<br>typeof new Date() : "+typeof dateNew);
+
+        function myFun(){
+            var d = new Date();
+            document.getElementById("para3").innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(myFun,1000);
+</script>
+</head>
+<body>
+    <span id="para3"></span>
+    <button onclick="document.getElementById('para1').innerHTML=Date()">Click</button>
+    <button onclick="document.getElementById('para2').innerHTML=new Date()">Click</button>
+    <p id="para1"></p>
+    <p id="para2"></p>
+</body>
+</html>

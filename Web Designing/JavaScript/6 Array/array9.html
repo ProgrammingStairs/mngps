@@ -1,0 +1,27 @@
+<script>
+    var arr = ["red","green","blue"];
+    document.write("<br>Array elements are : "+arr);
+
+    arr.splice(1,0,"purple","orange");
+    document.write("<br>Array elements are : "+arr);
+
+    arr.splice(2,3);
+    document.write("<br>Array elements are : "+arr);
+
+    arr.splice(1,0,"brown");
+    document.write("<br>Array elements are : "+arr);
+
+    var str = ["red","purple","blue","green","white","grey"];
+    document.write("<br>join : "+str.join(","));
+    document.write("<br>join : "+str.join("-"));
+    document.write("<br>join : "+str.join(" "));
+
+    document.write("<br>includes : "+str.includes("blue"));
+    document.write("<br>includes : "+str.includes("BLUE"));
+    document.write("<br>includes : "+str.includes("orange"));
+
+    document.write("<br>slice : "+str.slice(2));
+    document.write("<br>slice : "+str.slice(2,4));
+
+
+</script>
