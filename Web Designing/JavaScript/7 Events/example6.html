@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function color(color){
+            var arrPara = document.querySelectorAll("p");
+            for(var i=0;i<arrPara.length;i++){
+                if(i==0 && color.toLowerCase()=='red'.toLowerCase())
+                    arrPara[i].style.color = color;
+                if(i==1 &&  color.toLowerCase()=='green'.toLowerCase())
+                    arrPara[i].style.color = color;
+                if(i==2 &&  color.toLowerCase()=='blue'.toLowerCase())
+                    arrPara[i].style.color = color;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('blue')">Blue</button>
+    
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti beatae esse architecto quas non, magni ipsum debitis molestias eligendi odio? Excepturi voluptate optio consequatur itaque nisi molestiae incidunt non?</p>
+
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti beatae esse architecto quas non, magni ipsum debitis molestias eligendi odio? Excepturi voluptate optio consequatur itaque nisi molestiae incidunt non?</p>
+
+    <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti beatae esse architecto quas non, magni ipsum debitis molestias eligendi odio? Excepturi voluptate optio consequatur itaque nisi molestiae incidunt non?</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showFun(){
+            var arr = document.querySelectorAll("input");
+            var items='';
+            for(var i=0;i<arr.length;i++){
+                items += arr[i].checked ? arr[i].value+"\n" : "";
+            }
+            alert((items=='') ? "No items selected" : "You selected : \n"+items);
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Example</h2>
+    <input type="checkbox" id="coffee" name="coffee" value="Coffee"> Coffee <br>
+    <input type="checkbox" id="juice" name="juice" value="Juice"> Juice <br>
+    <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate"> Chocolate <br>
+    <input type="checkbox" id="tea" name="tea" value="Tea"> Tea <br>
+    <input type="checkbox" id="water" name="water" value="Water"> Water <br>
+    <button onclick="showFun()">Click</button>
+</body>
+</html>
