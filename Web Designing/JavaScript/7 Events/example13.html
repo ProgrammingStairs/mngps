@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var valueData;
+        function myFun(){
+            alert("You select "+valueData);
+        }
+        function addressData(){
+            var address = document.getElementById("address");
+            valueData = address.value;
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="myFun()">
+        <select name="address" id="address" onchange="addressData()">
+            <option value="">Select Address</option>
+            <option value="Indore, Madhya Pradesh">Indore, Madhya Pradesh</option>
+            <option value="Bhopal, Madhya Pradesh">Bhopal, Madhya Pradesh</option>
+            <option value="Jabalpur, Madhya Pradesh">Jabalpur, Madhya Pradesh</option>
+        </select> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

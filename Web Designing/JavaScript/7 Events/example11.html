@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #biggerbox{
+            height:500px;
+            width:700px;
+            border-style: solid;
+            margin: auto;
+        }
+        #upperImg{
+            height:300px;
+            width:700px;
+        }
+        #upperbox{
+            height:300px;
+            border-style: solid;
+        }
+        #bottombox{
+            height: 160px;
+            width: 160px;
+            border-style: solid;
+            margin: 5px; 
+            float: left;
+        }
+        #lowerImg{
+            height: 160px;
+            width: 160px;
+        }
+    </style>
+    <script>
+        function swapImg(imageElement){
+            var temp;
+            var small = imageElement;
+            var bigger = document.getElementById("upperImg");
+            temp = small.src;
+            small.src = bigger.src;
+            bigger.src = temp;
+        }
+    </script>
+</head>
+<body>
+    <div id="biggerbox">
+        <div id="upperbox">
+            <img src="banner.jpg"  id="upperImg" alt="">
+        </div>
+        <hr>
+        <div id="bottombox">
+            <img src="img1.jpg" onclick="swapImg(this)" id="lowerImg" alt="">
+        </div>
+        <div id="bottombox">
+            <img src="img2.jpg" onclick="swapImg(this)" id="lowerImg" alt="">
+        </div>
+        <div id="bottombox">
+            <img src="img3.jpg" onclick="swapImg(this)" id="lowerImg" alt="">
+        </div>
+        <div id="bottombox">
+            <img src="logo.png" onclick="swapImg(this)" id="lowerImg" alt="">
+        </div>
+    </div>
+</body>
+</html>

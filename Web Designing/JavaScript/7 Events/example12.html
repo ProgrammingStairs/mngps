@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function up(){
+            alert("keyup");
+        }
+        function down(){
+            alert("keydown");
+        }
+        function press(){
+            alert("keypress");
+        }
+        function foc(){
+            var foc = document.getElementById("foc");
+            foc.style.backgroundColor="crimson";
+        }
+        function blr(){
+            var foc = document.getElementById("foc");
+            foc.style.backgroundColor="green";
+        }
+        
+    </script>
+    <script>
+        function load(){
+            alert("Welcome to JavaScript");
+        }
+    </script>
+</head>
+<body onload="load()">
+    <input type="text" placeholder="key up" id="up" onkeyup="up()"> <br>
+    <input type="text" placeholder="key down" id="down" onkeydown="down()"> <br>
+    <input type="text" placeholder="key press" id="press" onkeypress="press()"> <br>
+    <input type="text" placeholder="onfocus" onfocus="foc()" onblur="blr()" id="foc"> <br>
+    
+</body>
+</html>
