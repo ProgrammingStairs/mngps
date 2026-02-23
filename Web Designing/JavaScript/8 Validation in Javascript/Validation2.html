@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+        }
+        function usernamevalidate(){
+            var username = document.getElementById("username");
+            var udisplay = document.getElementById("udisplay");
+            if(username.value.trim()==""){
+                udisplay.innerHTML = "Username Required";
+                udisplay.style.color="red";
+                return false;
+            }
+            else{
+                udisplay.innerHTML="";
+                return true;
+            }
+        }
+        function emailvalidate(){
+            var email = document.getElementById("email");
+            var edisplay = document.getElementById("edisplay");
+            if(email.value.trim()==""){
+                edisplay.innerHTML = "Email Required";
+                edisplay.style.color="red";
+                return false;
+            }
+            else{
+                edisplay.innerHTML="";
+                return true;
+            }
+        }
+        function gendervalidate(){
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+            var gdisplay = document.getElementById("gdisplay");
+           
+            if(male.checked==false && female.checked==false){
+                gdisplay.innerHTML = "Gender Required";
+                gdisplay.style.color="red";
+                return false;
+            }
+            else{
+                gdisplay.innerHTML="";
+                return true;
+            }
+        }
+        function subjectvalidate(){
+            var subject = document.getElementById("subject");
+            var sdisplay = document.getElementById("sdisplay");
+            if(subject.value.trim()==""){
+                sdisplay.innerHTML = "Subject Required";
+                sdisplay.style.color="red";
+                return false;
+            }
+            else{
+                sdisplay.innerHTML="";
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h2>JavaScript Validation</h2>
+    <form action="welcome.html" onsubmit="return validate()">
+        <input onkeyup="usernamevalidate()" type="text" placeholder="Enter Username" name="username" id="username"> 
+        <span style="color:red" id="udisplay">*</span><br>
+        <input onkeyup="emailvalidate()" type="email" placeholder="Enter Email" name="email" id="email"> 
+        <span style="color:red" id="edisplay">*</span><br>
+        <input onclick="gendervalidate()" type="radio" name="gender" id="male">Male 
+        <input onclick="gendervalidate()" type="radio" name="gender" id="female">Female
+        <span style="color:red" id="gdisplay">*</span><br>
+        <select onchange="subjectvalidate()" name="subject" id="subject">
+            <option value="">Select Subject</option>
+            <option value="C language">C language</option>
+            <option value="C++ language">C++ language</option>
+            <option value="C# language">C# language</option>
+            <option value=".Net language">.Net language</option>
+            <option value="Java language">Java language</option>
+        </select> 
+        <span style="color:red" id="sdisplay">*</span><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
