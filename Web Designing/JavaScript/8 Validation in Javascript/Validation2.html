@@ -6,6 +6,38 @@
     <title>Document</title>
     <script>
         function validate(){
+            var usernameStatus = usernamevalidate();
+            var emailStatus = emailvalidate();
+            var genderStatus = gendervalidate();
+            var subjectStatus = subjectvalidate();
+            
+            var edisplay = document.getElementById("edisplay");
+            var gdisplay = document.getElementById("gdisplay");
+            var sdisplay = document.getElementById("sdisplay");
+
+            if(usernameStatus==false){
+                if(emailStatus==false)
+                    edisplay.innerHTML="*";
+                if(genderStatus==false)
+                    gdisplay.innerHTML="*";
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(emailStatus==false){
+                if(genderStatus==false)
+                    gdisplay.innerHTML="*";
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(genderStatus==false){
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(subjectStatus==false)
+                return false;
         }
         function usernamevalidate(){
             var username = document.getElementById("username");
@@ -69,11 +101,14 @@
     <form action="welcome.html" onsubmit="return validate()">
         <input onkeyup="usernamevalidate()" type="text" placeholder="Enter Username" name="username" id="username"> 
         <span style="color:red" id="udisplay">*</span><br>
+        
         <input onkeyup="emailvalidate()" type="email" placeholder="Enter Email" name="email" id="email"> 
         <span style="color:red" id="edisplay">*</span><br>
+        
         <input onclick="gendervalidate()" type="radio" name="gender" id="male">Male 
         <input onclick="gendervalidate()" type="radio" name="gender" id="female">Female
         <span style="color:red" id="gdisplay">*</span><br>
+        
         <select onchange="subjectvalidate()" name="subject" id="subject">
             <option value="">Select Subject</option>
             <option value="C language">C language</option>
@@ -83,6 +118,7 @@
             <option value="Java language">Java language</option>
         </select> 
         <span style="color:red" id="sdisplay">*</span><br>
+        
         <input type="submit" value="Submit">
     </form>
 </body>

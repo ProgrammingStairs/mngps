@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var txt = document.getElementById("txt");
+            var display = document.getElementById("display");
+            if(txt.value.trim()==""){
+                display.innerHTML = "Field Required";
+                display.style.color = "red";
+            }else{
+                // var regex = /\d/;
+                // var regex = /\d{2}/;
+                // var regex = /^\d/;
+                // var regex = /^\d$/;
+                // var regex = /^\d+$/;
+                // var regex = /\D/;
+                // var regex = /^\d{2,5}$/;
+                // var regex = /^[6789][0-9]{9}$/;  
+                // var regex = /^[0-9]+$/;
+                // var regex = /^[A-Z]+$/;
+                // var regex = /^[a-z]+$/;
+                // var regex = /^[~!@#$%^&*()_+]+$/;
+                // var regex = /^[0-9A-Za-z_]+$/;
+                // var regex = /^\w+$/;
+                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8}$/;
+                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,}$/;
+                var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,12}$/;
+
+                if(regex.test(txt.value)){
+                    display.innerHTML="valid";
+                    display.style.color="green";
+                }else{
+                    display.innerHTML="invalid";
+                    display.style.color="red";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Validation | Regular Expression</h2>
+    <input onkeyup="validate()" type="text" placeholder="Enter text" name="txt" id="txt"> 
+    <span style="color:red" id="display">*</span><br>
+    <input type="submit" value="Submit" onclick="validate()">
+    </form>
+</body>
+</html>
