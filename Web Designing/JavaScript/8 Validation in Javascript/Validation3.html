@@ -19,16 +19,21 @@
                 // var regex = /^\d+$/;
                 // var regex = /\D/;
                 // var regex = /^\d{2,5}$/;
-                // var regex = /^[6789][0-9]{9}$/;  
+                // var regex = /^[6789][0-9]{9}$/;   // mobile no.
                 // var regex = /^[0-9]+$/;
                 // var regex = /^[A-Z]+$/;
                 // var regex = /^[a-z]+$/;
                 // var regex = /^[~!@#$%^&*()_+]+$/;
                 // var regex = /^[0-9A-Za-z_]+$/;
                 // var regex = /^\w+$/;
-                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8}$/;
-                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,}$/;
-                var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,12}$/;
+                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8}$/; //password validation
+                // var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,}$/; //password validation
+                //var regex = /^(?=.+?[0-9])(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()_+]).{8,12}$/; //password validation
+                // var regex = /^[0-9A-Za-z]+@[a-z]+\.[a-z]{2,3}$/;        // email
+                // var regex = /^[0-9A-Za-z]+@[a-z]+\.\edu\.[a-z]{2,3}$/; // email
+                // var regex = /^[0-9A-Za-z]+@gmail+\.[a-z]{2,3}$/;          // email
+                //var regex = /^[0-9A-Za-z]+@(gmail|yahoo)+\.[a-z]{2,3}$/;   // email
+                var regex = /^[0-9A-Za-z]+@[a-z]+\.[a-z]{2,3}\.[a-z]{2,3}$/;   // email
 
                 if(regex.test(txt.value)){
                     display.innerHTML="valid";

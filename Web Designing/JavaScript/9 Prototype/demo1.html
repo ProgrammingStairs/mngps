@@ -1,0 +1,19 @@
+<script>
+    function Employee(){
+        this.name = "Andrew Anderson";
+        this.address = "Indore, Madhya Pradesh"; 
+        this.showDetails = ()=>{
+            document.write("Name : "+this.name);
+            document.write("<br>Address : "+this.address);
+        }
+    }
+    Employee.prototype.pincode = 452010;
+    Employee.prototype.printDetails = function(){
+            document.write("<br>Pincode : "+this.pincode);
+        }
+    
+    var emp = new Employee();
+    // console.log(emp.name);
+    emp.showDetails();
+    emp.printDetails();
+</script>

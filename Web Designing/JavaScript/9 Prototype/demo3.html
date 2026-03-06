@@ -1,0 +1,23 @@
+<script>
+    function Operation(){
+        this.setData = function(a,b){
+            this.a = a;
+            this.b = b;
+        }
+        this.printData = function(){
+            document.write("<br>a : "+this.a+"<br>b : "+this.b);
+        }
+        this.swap = function(){
+            temp = this.a;
+            this.a = this.b;
+            this.b = temp;
+        }
+    }
+    var obj = new Operation();
+    obj.setData(5,6);
+    document.write("<br>Before swapping<br>");
+    obj.printData();
+    obj.swap();
+    document.write("<br>After swapping<br>");
+    obj.printData();
+</script>
