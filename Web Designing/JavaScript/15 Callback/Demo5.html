@@ -1,0 +1,12 @@
+<script>
+    var num1 = parseInt(prompt("Enter First Number : "));
+    var num2 = parseInt(prompt("Enter Second Number : "));
+    
+    function myFun(a,b,callback){
+        var sum = a+b;
+        callback(sum);
+    }
+    myFun(num1,num2,(result)=>{
+        document.write("Sum : "+result);
+    });
+</script>

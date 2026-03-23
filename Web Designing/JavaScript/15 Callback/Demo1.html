@@ -1,0 +1,40 @@
+<script>
+    /*
+    Callback : If we pass any function as an argument in a function, then that passed argument function is known as callback.
+
+    function myFun(x,y){
+        ....
+    }
+    myFun(a,b); // here a and b are agruments
+
+    if we talked about callback , then 
+
+    function myFun(callback){
+        ....
+        ....
+        callback();
+    }
+    myFun(function demo(){
+       ....
+    }); // here we pass function as an argument and here demo is the function which is passed as an argument and is considered as an callback
+
+    */
+
+    function myFun(callback){
+        document.write("<br>typeof : "+typeof callback);
+        document.write("<br>Here we are inside myFun");
+        callback();
+    }
+    myFun(function demo(){
+        document.write("<br>This is an example of callback");
+    });
+
+/*
+    callback = function demo(){
+        document.write("<br>This is an example of callback");
+    }
+    callback();   
+*/
+
+
+</script>

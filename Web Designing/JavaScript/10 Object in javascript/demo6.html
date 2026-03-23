@@ -1,0 +1,21 @@
+<script>
+var obj1 = {
+    name : "Andrew",
+    age : 45
+}
+var obj2 = {
+    name : "Peter",
+    age : 87
+}
+var arr = [obj1,obj2];
+
+// document.write("<br>Name : "+arr[0].name);
+// document.write("<br>Age : "+arr[0]['age']);
+
+// document.write("<br><br>Name : "+arr[1].name);
+// document.write("<br>Age : "+arr[1].age);
+
+for(var i=0;i<arr.length;i++){
+    document.write(`<br>Name : ${arr[i].name} <br>Age : ${arr[i].age}<br>`);
+}
+</script>

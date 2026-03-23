@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myScript.js"></script>
+</head>
+<body>
+    <center>
+        <h3>Example of LocalStorage</h3>
+        <hr width="300">
+            <a href="index.html">Home</a>   |   
+            <a href="login.html">Login</a>   |   
+            <a href="register.html">Register</a>   
+        <hr width="300">
+        <h3>Login Page</h3>
+        <form action="profile.html" onsubmit="return login()">
+            Email <br>
+            <input 
+                type="email"
+                placeholder="Enter Email"
+                name="email"
+                id="email"
+            > <br>
+            Password <br>
+            <input 
+                type="password"
+                placeholder="Enter Password"
+                name="password"
+                id="password"
+            > <br>
+            <input 
+                type="submit"
+                value="Login"
+            ><input 
+                type="reset"
+                value="Reset"
+            > <br>
+        </form>
+    </center>
+</body>
+</html>

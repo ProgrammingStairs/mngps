@@ -1,0 +1,34 @@
+<script>
+var obj1 = {
+    name : "Andrew",
+    age : 45,
+    address : "Indore"
+}
+var obj2 = {
+    name : "Peter",
+    age : 87,
+    address : "Indore"
+}
+var obj3 = {
+    name : "Jackson",
+    age : 28,
+    address : "Bhopal"
+}
+var obj4 = {
+    name : "Mathew",
+    age : 23,
+    address : "Ujjain"
+}
+var arr = [obj1,obj2,obj3,obj4];
+
+var table = `<table border='1'><tr><th>Name</th><th>Age</th><th>Address</th></tr>`
+for(var i=0;i<arr.length;i++){
+    table+=`<tr>
+            <td>${arr[i].name}</td>
+            <td>${arr[i].age}</td>
+            <td>${arr[i].address}</td>
+        </tr>`;
+}
+table+=`</table>`;
+document.write(table);
+</script>

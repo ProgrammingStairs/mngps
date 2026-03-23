@@ -1,0 +1,26 @@
+<button onclick="showData()">View Data</button>
+<p id="show"></p>
+<script>
+function showData(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","https://jsonplaceholder.typicode.com/posts",true);
+  xhttp.send();
+  xhttp.onreadystatechange = function(){
+    if(xhttp.readyState==4 && xhttp.status==200){
+      var arr = JSON.parse(xhttp.responseText);
+      var table = `<table border='1'><tr><th>UserId</th><th>Id</th><th>Title</th><th>Body</th></tr>`
+      for(var i=0;i<arr.length;i++){
+          table+=`<tr>
+                  <td>${arr[i].userId}</td>
+                  <td>${arr[i].id}</td>
+                  <td>${arr[i].title}</td>
+                  <td>${arr[i].body}</td>
+              </tr>`;
+      }
+      table+=`</table>`;
+      document.getElementById("show").innerHTML=table;
+    }
+  }
+}
+
+</script>

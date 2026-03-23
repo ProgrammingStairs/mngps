@@ -1,0 +1,32 @@
+ <!--
+    Object in javascript
+    --------------------
+    There are two ways to define object in javascript : 
+        a. by object literal
+            var obj = {}
+
+        b. by Object constructor
+            var obj = new Object();
+ -->
+<script>
+    // object literal
+    var obj = {}
+    console.log("obj : ",obj);
+    console.log("typeof obj : ",typeof obj);
+    
+    obj = {
+        fname : "Andrew",
+        lname : "Anderson",
+        age : 67
+    }
+    obj.address = "Indore";
+
+    console.log("First name : "+obj.fname);
+    console.log("Last name : "+obj.lname);
+    console.log("Age : "+obj.age);
+    console.log("Address : "+obj.address);
+    delete obj.age;
+    console.log("Age : "+ (obj.age==undefined ? "No age found" : obj.age));
+    
+    
+</script>

@@ -1,0 +1,18 @@
+
+<script>
+    // example showing the concept of object destructuring
+    function myFun(){
+        return {
+            name:"Andrew Anderson",
+            age : 45,
+            address : "Indore Madhya Pradesh"
+        }
+    }
+    const {name:fullName,age,address,pincode=452010} = myFun();
+    // document.write("<br>Name : "+name);
+    document.write("<br>FullName : "+fullName);
+    document.write("<br>Age : "+age);
+    document.write("<br>Address : "+address);
+    document.write("<br>Pincode : "+pincode);
+    
+</script>

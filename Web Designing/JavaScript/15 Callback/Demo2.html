@@ -1,0 +1,10 @@
+<script>
+    function myFun(callback){
+        document.write("<br>Here we are inside myFun");
+        callback();
+    }
+    var demo = function(){
+        document.write("<br>This is an example of callback");
+    }
+    myFun(demo);
+</script>

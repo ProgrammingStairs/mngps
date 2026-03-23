@@ -1,0 +1,40 @@
+<script>
+// var obj = {
+//     fname : "Andrew",
+//     lname : "Anderson",
+//     age : 45
+// }
+// for(var key in obj){
+//     console.log("Key : "+key+" and its type : "+typeof key+" and its value : "+obj[key]+" and typeof its value : "+typeof obj[key]);    
+// }
+
+
+// var obj = {
+//     let : 100,
+//     var : "200",
+//     0 : true
+// }
+// document.write("let : "+obj.let);
+// document.write("<br>var : "+obj.var);
+// document.write("<br>var : "+obj['var']);
+// document.write("<br>0 : "+obj[0]);
+// document.write("<br>obj['0'] : "+obj['0']);
+
+
+var obj = {
+    name : "Andrew Anderson",
+    address : {
+        city : "Indore",
+        state : "Madhya Pradesh",
+        toString(){
+            return this.city+" "+this.state
+        }
+    }
+}
+document.write("<br>name : "+obj.name);
+document.write("<br>address : "+obj.address);
+document.write("<br>city : "+obj.address.city);
+document.write("<br>state : "+obj.address.state);
+
+
+</script>

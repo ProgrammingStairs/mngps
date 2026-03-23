@@ -1,0 +1,17 @@
+<script>
+    // Asynchronous callback
+    
+    function myFun(callback1,callback2){
+        document.write("<br>Here we are inside myFun");
+        setTimeout(callback1,2000); // HERE 0 represents zero time delay
+        document.write("<br>Here we are inside myFun");
+        setTimeout(callback2,3000); // Her 0 represents zero time delay
+    }
+    var demo1 = function(){
+        document.write("<br>This is an example of callback - 1");
+    }
+    var demo2 = function(){
+        document.write("<br>This is an example of callback - 2");
+    }
+    myFun(demo1,demo2);
+</script>

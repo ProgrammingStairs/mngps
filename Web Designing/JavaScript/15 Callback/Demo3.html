@@ -1,0 +1,17 @@
+<script>
+    // synchronous callback
+    
+    function myFun(callback1,callback2){
+        document.write("<br>Here we are inside myFun");
+        callback1();
+        document.write("<br>Here we are inside myFun");
+        callback2();
+    }
+    var demo1 = function(){
+        document.write("<br>This is an example of callback - 1");
+    }
+    var demo2 = function(){
+        document.write("<br>This is an example of callback - 2");
+    }
+    myFun(demo1,demo2);
+</script>
